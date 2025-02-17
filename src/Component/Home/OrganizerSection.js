@@ -9,8 +9,7 @@ const OrganizerSection = () => {
           <div
             className="col-lg-6"
             data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
+        
           >
             <div className="ps-lg-4">
               {/* Section Header */}
@@ -58,8 +57,7 @@ const OrganizerSection = () => {
           <div
             className="col-lg-6"
             data-aos="fade-left"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
+            
           >
             <div className="position-relative">
               <img

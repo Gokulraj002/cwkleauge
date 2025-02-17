@@ -11,7 +11,7 @@ const AboutSection = () => {
             {/* Left Column - Image */}
 
             {/* Right Column - Content */}
-            <div className="col-lg-6" data-aos="fade-in-right">
+            <div className="col-lg-6" data-aos="zoom-in-right">
               <div className="ps-lg-4">
                 {/* Section Header */}
                 <div className="mb-4">
