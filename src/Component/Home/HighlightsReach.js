@@ -9,7 +9,8 @@ import {
   FaDungeon,
   FaOutdent,
 } from "react-icons/fa";
-// import AOS from "aos";
+import AOS from "aos";
+import { useEffect } from "react";
 
 const highlights = [
   { number: 10, title: "TEAMS OF KARNATAKA" },
@@ -73,19 +74,19 @@ const reachData = [
 ];
 
 const HighlightsReach = () => {
-  // useEffect(() => {
-  //   AOS.init({ duration: 1000, once: true, easing: "ease-in-out" });
-  // }, []);
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true, easing: "ease-in-out" });
+  }, []);
 
   return (
     <>
       {/* Highlights Section */}
-      <section className="py-5 bg2" id="highlights">
+      <section className="py-5 bg2 aos" id="highlights">
         <div className="container">
           <h2
             className="text-center font mx-auto position-relative mb-5 text-white"
             style={{ maxWidth: "500px" }}
-            // data-aos="fade-down"
+            data-aos="fade-down"
           >
             HIGHLIGHTS
             <span
@@ -104,8 +105,8 @@ const HighlightsReach = () => {
               <div
                 className="col-md-6 col-lg-4"
                 key={index}
-                // data-aos="zoom-in"
-                // data-aos-delay={index * 100}
+                data-aos="zoom-in"
+                data-aos-delay={index * 100}
               >
                 <div className="highlight-card text-center p-4 shadow-sm bg-white rounded h-100 d-flex flex-column justify-content-center align-items-center transition-all hover-shadow">
                   <div className="highlight-number fs-1 fw-bold bg-txt pb-2 mb-3 position-relative">
@@ -140,7 +141,7 @@ const HighlightsReach = () => {
           <h2
             className="text-center font mx-auto position-relative mb-5"
             style={{ maxWidth: "500px" }}
-            // data-aos="fade-down"
+            data-aos="fade-down"
           >
             ESTIMATE REACH
             <span
@@ -159,8 +160,8 @@ const HighlightsReach = () => {
               <div
                 className="col-md-6 col-lg-3"
                 key={index}
-                // data-aos="flip-up"
-                // data-aos-delay={index * 100}
+                data-aos="flip-up"
+                data-aos-delay={index * 100}
               >
                 <div className="reach-card text-center p-4 shadow-sm bg-white rounded d-flex flex-column align-items-center justify-content-center transition-all hover-shadow">
                   {/* Icon */}

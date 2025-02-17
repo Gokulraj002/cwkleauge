@@ -32,7 +32,7 @@ const benefits = [
 const ParticipationBenefits = () => {
   return (
     <section className="py-5" id="benefits">
-      <div className="container">
+      <div className="container aos">
         <h2 className="font text-center mx-auto" style={{ maxWidth: "500px" }}>
           <span className="position-relative text-dark">
             Participation Benefits
@@ -47,7 +47,7 @@ const ParticipationBenefits = () => {
             ></span>
           </span>
         </h2>
-        <div className="row g-4 mt-3 ">
+        <div className="row g-4 mt-3 " data-aos="zoom-in-down">
           {benefits.map((benefit, index) => (
             <div className="col-md-6 " key={index}>
               <div className="benefit-item d-flex align-items-center">

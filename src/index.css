@@ -7,6 +7,9 @@ body {
 .bg2 {
   background-color: #380784;
 }
+.offcanvas {
+  background-color: #380784 !important;
+}
 .bg {
   background-color: #fd0388;
 }
@@ -103,4 +106,7 @@ body {
   font-size: 16px;
   font-family: "inter" !important;
   /* text-align: justify; */
+}
+.aos {
+  overflow: hidden !important;
 }

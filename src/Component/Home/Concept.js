@@ -7,7 +7,7 @@ const Concept = () => {
 
       {/* The Concept */}
       <div className="pt-3 pb-4" id="concept">
-        <div className="container my-5">
+        <div className="container my-5 aos">
           <h2 className="text-center font  mb-3">
             <span className="position-relative">
               THE CONCEPT
@@ -22,7 +22,7 @@ const Concept = () => {
               ></span>
             </span>
           </h2>
-          <div className="row g-4 mt-3 font3">
+          <div className="row g-4 mt-3 font3" data-aos="zoom-in">
             <div className="col-md-3">
               <div className="card text-center shadow p-4 border-0">
                 <div className="fs-1">🤝</div>

@@ -4,9 +4,14 @@ import About from "../../images/organizer.png";
 const OrganizerSection = () => {
   return (
     <section className="py-5 bg-light" id="organizer">
-      <div className="container">
+      <div className="container aos">
         <div className="row align-items-center g-5">
-          <div className="col-lg-6">
+          <div
+            className="col-lg-6"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <div className="ps-lg-4">
               {/* Section Header */}
               <div className="mb-4">
@@ -50,7 +55,12 @@ const OrganizerSection = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-6">
+          <div
+            className="col-lg-6"
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <div className="position-relative">
               <img
                 src={About}

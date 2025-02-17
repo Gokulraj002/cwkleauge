@@ -3,9 +3,9 @@ import React from "react";
 const WhyJoin = () => {
   return (
     <section className="py-5 bg2 text-white" id="join">
-      <div className="container">
+      <div className="container aos">
         <div className="row justify-content-center text-center">
-          <div className="col-md-8 col-12 ">
+          <div className="col-md-8 col-12 " data-aos="zoom-in-up">
             <h2 className="font bg-txt  mx-auto" style={{ maxWidth: "500px" }}>
               <span className="position-relative bg-txt">
                 WHY JOIN THE CWKL?

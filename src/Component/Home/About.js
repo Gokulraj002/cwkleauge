@@ -4,14 +4,14 @@ import About from "../../images/about2.png";
 const AboutSection = () => {
   return (
     <>
-      <section className="py-5 bg-light" id="about">
+      <section className="py-5 bg-light aos" id="about">
         <div className="container">
           {/* Main Content Row */}
-          <div className="row align-items-center g-5">
+          <div className="row align-items-center g-5 ">
             {/* Left Column - Image */}
 
             {/* Right Column - Content */}
-            <div className="col-lg-6">
+            <div className="col-lg-6" data-aos="fade-in-right">
               <div className="ps-lg-4">
                 {/* Section Header */}
                 <div className="mb-4">
@@ -127,7 +127,7 @@ const AboutSection = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6" data-aos="zoom-in-left">
               <div className="position-relative">
                 <img
                   src={About}
@@ -145,29 +145,31 @@ const AboutSection = () => {
           </div>
         </div>
       </section>
-      <div className="container py-5 text-center">
-        <h2 className=" font mb-3">
-          <span className="position-relative">
-            WHAT WE DO
-            <span
-              className="position-absolute w-50 h-2 bg-primary rounded"
-              style={{
-                height: "3px",
-                bottom: "-10px",
-                left: "25%",
-                right: "25%",
-              }}
-            ></span>
-          </span>
-          {/* <span className="bg-txt">Celebrity Women's Kabaddi League</span> */}
-        </h2>
-        <p className="font3 mt-2">
-          The CWKL is not just a tournament; it's a celebration of the game.
-          Featuring teams from diverse regions competing in a series of
-          electrifying matches. Our league structure is designed to foster
-          intense competition while maintaining the fun and informal nature that
-          makes Kabaddi so beloved.
-        </p>
+      <div className="container py-5 text-center aos">
+        <div className="" data-aos="zoom-in">
+          <h2 className=" font mb-3">
+            <span className="position-relative">
+              WHAT WE DO
+              <span
+                className="position-absolute w-50 h-2 bg-primary rounded"
+                style={{
+                  height: "3px",
+                  bottom: "-10px",
+                  left: "25%",
+                  right: "25%",
+                }}
+              ></span>
+            </span>
+            {/* <span className="bg-txt">Celebrity Women's Kabaddi League</span> */}
+          </h2>
+          <p className="font3 mt-2">
+            The CWKL is not just a tournament; it's a celebration of the game.
+            Featuring teams from diverse regions competing in a series of
+            electrifying matches. Our league structure is designed to foster
+            intense competition while maintaining the fun and informal nature
+            that makes Kabaddi so beloved.
+          </p>
+        </div>
       </div>
     </>
   );

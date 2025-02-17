@@ -8,6 +8,7 @@ const App = () => {
     // Initialize AOS with specific settings
     Aos.init({
       duration: 1500, // Animation duration in milliseconds
+      offset: 200,
       once: true, // Allow animations to happen only once
       mirror: true, // Disable mirroring animations when scrolling back
     });

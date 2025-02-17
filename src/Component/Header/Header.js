@@ -3,6 +3,7 @@ import logo from "../../images/logo.png";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [isOffCanvasOpen, setIsOffCanvasOpen] = useState(false); // State to track if off-canvas is open
 
   useEffect(() => {
     const handleScroll = () => {
@@ -12,6 +13,10 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const handleNavClick = () => {
+    setIsOffCanvasOpen(false); // Close off-canvas when a menu item is clicked
+  };
 
   return (
     <nav
@@ -37,8 +42,7 @@ const Header = () => {
         <button
           className="navbar-toggler"
           type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
+          onClick={() => setIsOffCanvasOpen(!isOffCanvasOpen)} // Toggle off-canvas state
           aria-controls="offcanvasNavbar"
           aria-label="Toggle navigation"
         >
@@ -47,19 +51,29 @@ const Header = () => {
 
         {/* Off-Canvas Menu */}
         <div
-          className="offcanvas offcanvas-start w-75"
+          className={`offcanvas offcanvas-start w-75 ${
+            isOffCanvasOpen ? "show" : ""
+          }`}
           tabIndex="-1"
           id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel"
         >
           <div className="offcanvas-header">
-            <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
-              Menu
-            </h5>
+            <a className="navbar-brand d-flex align-items-center" href="/">
+              <img
+                src={logo}
+                alt="Logo"
+                className="logo"
+                style={{
+                  height: scrolled ? "70px" : "100px",
+                  transition: "height 0.3s ease-in-out",
+                }}
+              />
+            </a>
             <button
               type="button"
               className="btn-close"
-              data-bs-dismiss="offcanvas"
+              onClick={() => setIsOffCanvasOpen(false)} // Close off-canvas when close button is clicked
               aria-label="Close"
             ></button>
           </div>
@@ -70,13 +84,16 @@ const Header = () => {
                 { name: "About Us", link: "#about" },
                 { name: "Organizer", link: "#organizer" },
                 { name: "Concept", link: "#concept" },
-
                 { name: "Benefits", link: "#benefits" },
                 { name: "Highlights", link: "#highlights" },
                 { name: "Reach", link: "#reach" },
               ].map((item, index) => (
                 <li className="nav-item" key={index}>
-                  <a className="nav-link text-white fw-bold" href={item.link}>
+                  <a
+                    className="nav-link text-white font2"
+                    href={item.link}
+                    onClick={handleNavClick} // Close off-canvas when a menu item is clicked
+                  >
                     {item.name}
                   </a>
                 </li>
