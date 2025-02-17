@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React, { useEffect } from "react";
+import Main from "./Component/Main";
+import "aos/dist/aos.css";
+import ScrollToTop from "./Scroll/Scroll";
+import Aos from "aos";
+const App = () => {
+  useEffect(() => {
+    // Initialize AOS with specific settings
+    Aos.init({
+      duration: 1500, // Animation duration in milliseconds
+      once: true, // Allow animations to happen only once
+      mirror: true, // Disable mirroring animations when scrolling back
+    });
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Main />
+      <ScrollToTop />
+    </>
   );
-}
+};
 
 export default App;
