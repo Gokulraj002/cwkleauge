@@ -86,7 +86,6 @@ const Header = () => {
                 { name: "Concept", link: "#concept" },
                 { name: "Benefits", link: "#benefits" },
                 { name: "Highlights", link: "#highlights" },
-                { name: "Reach", link: "#reach" },
               ].map((item, index) => (
                 <li className="nav-item" key={index}>
                   <a

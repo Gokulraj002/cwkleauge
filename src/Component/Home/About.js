@@ -1,5 +1,6 @@
 import React from "react";
 import About from "../../images/about2.png";
+import { FaTrophy, FaUsers } from "react-icons/fa";
 
 const AboutSection = () => {
   return (
@@ -8,9 +9,7 @@ const AboutSection = () => {
         <div className="container">
           {/* Main Content Row */}
           <div className="row align-items-center g-5 ">
-            {/* Left Column - Image */}
-
-            {/* Right Column - Content */}
+            {/* Left Column - Content */}
             <div className="col-lg-6" data-aos="zoom-in-right">
               <div className="ps-lg-4">
                 {/* Section Header */}
@@ -61,20 +60,13 @@ const AboutSection = () => {
                     <div className="col-md-6">
                       <div className="d-flex align-items-center">
                         <div className="feature-icon bg-primary bg-opacity-10 rounded-circle p-3 me-3">
-                          <div
-                            className="bg-txt"
-                            style={{ width: "24px", height: "24px" }}
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              stroke="currentColor"
-                              strokeWidth="2"
-                            >
-                              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-                            </svg>
-                          </div>
+                          <FaTrophy
+                            style={{
+                              color: "#fd0388",
+                              width: "24px",
+                              height: "24px",
+                            }}
+                          />
                         </div>
                         <span className="fw-medium">
                           Professional Development
@@ -84,46 +76,18 @@ const AboutSection = () => {
                     <div className="col-md-6">
                       <div className="d-flex align-items-center">
                         <div className="feature-icon bg-primary bg-opacity-10 rounded-circle p-3 me-3">
-                          <div
-                            className="bg-txt"
-                            style={{ width: "24px", height: "24px" }}
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              stroke="currentColor"
-                              strokeWidth="2"
-                            >
-                              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                              <circle cx="9" cy="7" r="4" />
-                              <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
-                            </svg>
-                          </div>
+                          <FaUsers
+                            style={{
+                              color: "#fd0388",
+                              width: "24px",
+                              height: "24px",
+                            }}
+                          />
                         </div>
                         <span className="fw-medium">Talent Showcase</span>
                       </div>
                     </div>
                   </div>
-
-                  {/* CTA Button */}
-                  {/* <div className="mt-4">
-                  <button className="btn bg btn-sm ">
-                    Explore Our Concept
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      className="ms-2"
-                    >
-                      <path d="M5 12h14M12 5l7 7-7 7" />
-                    </svg>
-                  </button>
-                </div> */}
                 </div>
               </div>
             </div>
@@ -160,7 +124,6 @@ const AboutSection = () => {
                 }}
               ></span>
             </span>
-            {/* <span className="bg-txt">Celebrity Women's Kabaddi League</span> */}
           </h2>
           <p className="font3 mt-2">
             The CWKL is not just a tournament; it's a celebration of the game.

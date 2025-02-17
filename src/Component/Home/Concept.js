@@ -8,7 +8,7 @@ const Concept = () => {
       {/* The Concept */}
       <div className="pt-3 pb-4" id="concept">
         <div className="container my-5 aos">
-          <h2 className="text-center font  mb-3">
+          <h2 className="text-center font mb-3">
             <span className="position-relative">
               THE CONCEPT
               <span
@@ -23,7 +23,7 @@ const Concept = () => {
             </span>
           </h2>
           <div className="row g-4 mt-3 font3" data-aos="zoom-in">
-            <div className="col-md-3">
+            <div className="col-lg-3 col-mg-6 col-12">
               <div className="card text-center shadow p-4 border-0">
                 <div className="fs-1">🤝</div>
                 <h5 className="mt-3 fw-bold">FRANCHISE BASED</h5>
@@ -34,7 +34,7 @@ const Concept = () => {
               </div>
             </div>
 
-            <div className="col-md-3">
+            <div className="col-lg-3 col-mg-6 col-12">
               <div className="card text-center shadow p-4  border-0">
                 <div className="fs-1">🏆</div>
                 <h5 className="mt-3 fw-bold">MATCHES PLAYED</h5>
@@ -45,7 +45,7 @@ const Concept = () => {
               </div>
             </div>
 
-            <div className="col-md-3">
+            <div className="col-lg-3 col-mg-6 col-12">
               <div className="card text-center shadow p-4  border-0">
                 <div className="fs-1">📡</div>
                 <h5 className="mt-3 fw-bold">BROADCAST ON</h5>
@@ -56,7 +56,7 @@ const Concept = () => {
               </div>
             </div>
 
-            <div className="col-md-3">
+            <div className="col-lg-3 col-mg-6 col-12">
               <div className="card text-center shadow p-4  border-0">
                 <div className="fs-1">👥</div>
                 <h5 className="mt-3 fw-bold">FEATURING</h5>

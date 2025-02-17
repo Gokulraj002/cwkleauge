@@ -51,7 +51,7 @@ const ParticipationBenefits = () => {
           {benefits.map((benefit, index) => (
             <div className="col-md-6 " key={index}>
               <div className="benefit-item d-flex align-items-center">
-                <div className="benefit-icon fs-1 me-3 bg-txt">
+                <div className="benefit-icon fs-1 me-3 bg-txt ms-md-5 ps-md-5">
                   {benefit.icon}
                 </div>
                 <div>
